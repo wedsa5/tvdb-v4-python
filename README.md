@@ -1,20 +1,20 @@
 # tvdb-v4-python
 This is the official tvdb api v4 python package
 
-### Instalation
+### Installation
     pip install tvdb_v4_official
 
 ### Getting Started
 some projects require a user supplied pin as well as an apikey
-    
+
     import tvdb_v4_official
 
-    tvdb = tvdb_v4_official.TVDB("APIKEY") # tvdb = tvdb_v4.Api("APIKEY", pin="YOUR PIN HERE")
-    
+    tvdb = tvdb_v4_official.TVDB("APIKEY") # tvdb = tvdb_v4_official.TVDB("APIKEY", pin="YOUR PIN HERE")
+
     # fetching a page of series
     tvdb.get_all_series(0)
 
-    # fetching a series 
+    # fetching a series
     tvdb.get_series(121361)
 
     # fetching a seasons episodes
@@ -33,5 +33,3 @@ some projects require a user supplied pin as well as an apikey
 
     # fetching a person record
     person = tvdb.get_person_extended(characters[0]["peopleId"])
-
-
